@@ -1,0 +1,567 @@
+{
+	"id": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+	"name": "FIAP",
+	"description": "Sandbox para Hackathon da FIAP - Safra.",
+	"order": [
+		"a23b9b99-9205-cfdd-e09c-8afe8c5e71a1",
+		"f4aea375-7c6b-4a78-daf2-751e89835c57",
+		"52e245ab-2f0b-55fe-9aad-f8042ff5b43d",
+		"56abaec9-c1ff-8c60-23bc-7cec624de405",
+		"dd013560-d201-32c9-5cca-e8af006ea7cc",
+		"d49b05be-4936-182c-922f-c1e5ebc70a14",
+		"3bcc84b9-2d4a-4d0b-97db-913e53d43ad0",
+		"bafc0ac8-4f62-0ecd-a8d9-044ea19ac790",
+		"32200b9c-52e8-7a95-e1dd-18464b93a799",
+		"029f2000-cfdc-ccbd-d81e-086aead8add5",
+		"5b0b386b-2a98-5a65-4b65-e8cae028f64e",
+		"f78b6833-f434-13cb-271e-f5d6d7592003",
+		"f2f5ce1b-620b-4f72-b81e-25bab1a796dc",
+		"ac30339f-33c6-1fad-ff79-63de0396ec0b",
+		"5324722d-23bf-7bc3-e510-18a2aeaf356e",
+		"49466e35-b051-9097-8f7c-4097c576c308",
+		"8127f23e-f32e-4470-1dd0-2a95ba31b0d0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "5392620",
+	"public": false,
+	"requests": [
+		{
+			"id": "029f2000-cfdc-ccbd-d81e-086aead8add5",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234533",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177001213,
+			"name": "Dados da conta 00711234533",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "32200b9c-52e8-7a95-e1dd-18464b93a799",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234522/transactions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177006027,
+			"name": "Transações da conta 00711234522",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "3bcc84b9-2d4a-4d0b-97db-913e53d43ad0",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234522/balances\n",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177017941,
+			"name": "Saldo da conta 00711234522",
+			"description": "Saldo da conta 00711234522",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "49466e35-b051-9097-8f7c-4097c576c308",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/optin",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597176967464,
+			"name": "Opt-in Martin Fowler",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": [],
+			"rawModeData": "{\r\n    \"Phone\": \"+5511933333333\",\r\n\t\"Name\": \"Martin Fowler Silva\",\r\n\t\"Email\": \"martin.fowler@martinfowlersilva.com\"\r\n}"
+		},
+		{
+			"id": "52e245ab-2f0b-55fe-9aad-f8042ff5b43d",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234511/balances\n",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177040762,
+			"name": "Saldo da conta 00711234511",
+			"description": "Saldo da conta 00711234511",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "5324722d-23bf-7bc3-e510-18a2aeaf356e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/optin",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597176973494,
+			"name": "Opt-in Robert Martin",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": [],
+			"rawModeData": "{\r\n\t\"Name\": \"Robert Cecil Martin da Silva\",\r\n\t\"Email\":\"robert.cecil@unclebobcleancode.com\",\r\n\t\"Phone\":\"+5511922222222\"\r\n}"
+		},
+		{
+			"id": "56abaec9-c1ff-8c60-23bc-7cec624de405",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/accounts/00711234511/transfers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177033976,
+			"name": "Transferência de 250,00 de 00711234511 para 00711234533",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": [],
+			"rawModeData": "{\r\n\t\r\n\t  \"Type\": \"TEF\",\r\n\t  \r\n\t  \r\n\t  \r\n    \"TransactionInformation\": \"Mensalidade Academia\",  \"DestinyAccount\": {\r\n        \"Bank\": \"422\",\r\n        \"Agency\": \"0071\",\r\n        \"Id\": \"1234533\",\r\n        \"Cpf\": \"12345678933\",\r\n        \"Name\": \"Mark Zuckerberg da Silva\",\r\n        \"Goal\":\"Credit\"\r\n    },\r\n\t\t    \"Amount\": {\r\n\t\t          \"Amount\": \"250.00\",\r\n\t\t          \"Currency\": \"BRL\"\r\n\t\t        }\r\n\t\t\t\t\t  \r\n}"
+		},
+		{
+			"id": "5b0b386b-2a98-5a65-4b65-e8cae028f64e",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234533/balances\n",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597176996702,
+			"name": "Saldo da conta 00711234533",
+			"description": "Saldo da conta 00711234533",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "8127f23e-f32e-4470-1dd0-2a95ba31b0d0",
+			"headers": "",
+			"headerData": [],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/health",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"data": null,
+			"dataMode": "params",
+			"name": "Health",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1597177081435,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a23b9b99-9205-cfdd-e09c-8afe8c5e71a1",
+			"headers": "authorization: Basic xxx\ncache-control: no-cache\ncontent-type: application/x-www-form-urlencoded\npostman-token: 280d6ac2-0e1c-d7ed-fc20-85de145f3d1c\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Basic xxx",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "postman-token",
+					"value": "280d6ac2-0e1c-d7ed-fc20-85de145f3d1c",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://idcs-902a944ff6854c5fbe94750e48d66be5.identity.oraclecloud.com/oauth2/v1/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177056675,
+			"name": "OAUTH2.0 Token Service",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": [],
+			"rawModeData": "grant_type=client_credentials&scope=urn:opc:resource:consumer::all"
+		},
+		{
+			"id": "ac30339f-33c6-1fad-ff79-63de0396ec0b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/optin",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597176979151,
+			"name": "Opt-in Eric Evans",
+			"description": "Opt-in Eric Evans",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": [],
+			"rawModeData": "{\r\n\t\"Name\": \"Eric Evans Silva\",\r\n\t\"Email\":\"eric.evans@ddd.com\",\r\n\t\"Phone\":\"+5511911111111\"\r\n}"
+		},
+		{
+			"id": "bafc0ac8-4f62-0ecd-a8d9-044ea19ac790",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/accounts/00711234522/transfers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177011251,
+			"name": "Transferência de 8000,00 de 00711234522 para 00711234533",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": [],
+			"rawModeData": "{\r\n    \"Amount\": {\r\n          \"Amount\": \"8000.00\",\r\n          \"Currency\": \"BRL\"\r\n        },\r\n    \"DestinyAccount\": {\r\n        \"Bank\": \"422\",\r\n        \"Agency\": \"0071\",\r\n        \"Id\": \"1234533\",\r\n        \"Cpf\": \"12345678933\",\r\n        \"Name\": \"Mark Zuckerberg da Silva\",\r\n        \"Goal\":\"Credit\"\r\n    },\r\n    \"Type\": \"TEF\",\r\n    \"TransactionInformation\": \"Entrada Compra Carro\"\r\n}"
+		},
+		{
+			"id": "d49b05be-4936-182c-922f-c1e5ebc70a14",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234522",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177022559,
+			"name": "Dados da conta 00711234522",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "dd013560-d201-32c9-5cca-e8af006ea7cc",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234511/transactions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177026856,
+			"name": "Transações da conta 00711234511",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "f2f5ce1b-620b-4f72-b81e-25bab1a796dc",
+			"headers": "Authorization: Bearer xxx\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer xxx",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/media/v1/youtube?fromData=2020-07-09&toData=2020-07-14&playlist=morningCalls&channel=safra",
+			"queryParams": [
+				{
+					"key": "fromData",
+					"value": "2020-07-09",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "toData",
+					"value": "2020-07-14",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "playlist",
+					"value": "morningCalls",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "channel",
+					"value": "safra",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597176984985,
+			"name": "Morning Calls",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "f4aea375-7c6b-4a78-daf2-751e89835c57",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234511",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597177046634,
+			"name": "Dados da conta 00711234511",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		},
+		{
+			"id": "f78b6833-f434-13cb-271e-f5d6d7592003",
+			"headers": "Authorization: Bearer XXX\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer XXX",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234533/transactions",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1597176991416,
+			"name": "Transações da conta 00711234533",
+			"description": "",
+			"collectionId": "2f5a5df5-c851-86cf-20c0-f657e041f873",
+			"responses": []
+		}
+	]
+}
