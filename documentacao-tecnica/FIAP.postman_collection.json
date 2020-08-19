@@ -264,7 +264,7 @@
 			"id": "8127f23e-f32e-4470-1dd0-2a95ba31b0d0",
 			"headers": "",
 			"headerData": [],
-			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/health",
+			"url": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/health",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
