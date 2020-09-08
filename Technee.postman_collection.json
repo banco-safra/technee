@@ -1,0 +1,634 @@
+{
+	"info": {
+		"_postman_id": "e54ce963-1259-49ee-8d10-e1df3975598c",
+		"name": "Technee",
+		"description": "Sandbox para Hackathon do Technee - Safra.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OAUTH2.0 Token Service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Basic xxx"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "postman-token",
+						"value": "280d6ac2-0e1c-d7ed-fc20-85de145f3d1c"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "grant_type=client_credentials&scope=urn:opc:resource:consumer::all"
+				},
+				"url": {
+					"raw": "https://idcs-902a944ff6854c5fbe94750e48d66be5.identity.oraclecloud.com/oauth2/v1/token",
+					"protocol": "https",
+					"host": [
+						"idcs-902a944ff6854c5fbe94750e48d66be5",
+						"identity",
+						"oraclecloud",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"v1",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dados da conta 00711234511",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer xxx"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234511",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234511"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Saldo da conta 00711234511",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234511/balances",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234511",
+						"balances"
+					]
+				},
+				"description": "Saldo da conta 00711234511"
+			},
+			"response": []
+		},
+		{
+			"name": "Transferência de 250,00 de 00711234511 para 00711234533",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\r\n\t  \"Type\": \"TEF\",\r\n\t  \r\n\t  \r\n\t  \r\n    \"TransactionInformation\": \"Mensalidade Academia\",  \"DestinyAccount\": {\r\n        \"Bank\": \"422\",\r\n        \"Agency\": \"0071\",\r\n        \"Id\": \"1234533\",\r\n        \"Cpf\": \"12345678933\",\r\n        \"Name\": \"Mark Zuckerberg da Silva\",\r\n        \"Goal\":\"Credit\"\r\n    },\r\n\t\t    \"Amount\": {\r\n\t\t          \"Amount\": \"250.00\",\r\n\t\t          \"Currency\": \"BRL\"\r\n\t\t        }\r\n\t\t\t\t\t  \r\n}"
+				},
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/accounts/00711234511/transfers",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"accounts",
+						"v1",
+						"accounts",
+						"00711234511",
+						"transfers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transações da conta 00711234511",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234511/transactions",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234511",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dados da conta 00711234522",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234522",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234522"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Saldo da conta 00711234522",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234522/balances",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234522",
+						"balances"
+					]
+				},
+				"description": "Saldo da conta 00711234522"
+			},
+			"response": []
+		},
+		{
+			"name": "Transferência de 8000,00 de 00711234522 para 00711234533",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Amount\": {\r\n          \"Amount\": \"8000.00\",\r\n          \"Currency\": \"BRL\"\r\n        },\r\n    \"DestinyAccount\": {\r\n        \"Bank\": \"422\",\r\n        \"Agency\": \"0071\",\r\n        \"Id\": \"1234533\",\r\n        \"Cpf\": \"12345678933\",\r\n        \"Name\": \"Mark Zuckerberg da Silva\",\r\n        \"Goal\":\"Credit\"\r\n    },\r\n    \"Type\": \"TEF\",\r\n    \"TransactionInformation\": \"Entrada Compra Carro\"\r\n}"
+				},
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/accounts/00711234522/transfers",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"accounts",
+						"v1",
+						"accounts",
+						"00711234522",
+						"transfers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transações da conta 00711234522",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234522/transactions",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234522",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dados da conta 00711234533",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234533",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234533"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Saldo da conta 00711234533",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234533/balances",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234533",
+						"balances"
+					]
+				},
+				"description": "Saldo da conta 00711234533"
+			},
+			"response": []
+		},
+		{
+			"name": "Transações da conta 00711234533",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/open-banking/v1/accounts/00711234533/transactions",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"open-banking",
+						"v1",
+						"accounts",
+						"00711234533",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Morning Calls",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer xxx"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/media/v1/youtube?fromData=2020-07-09&toData=2020-07-14&playlist=morningCalls&channel=safra",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"media",
+						"v1",
+						"youtube"
+					],
+					"query": [
+						{
+							"key": "fromData",
+							"value": "2020-07-09"
+						},
+						{
+							"key": "toData",
+							"value": "2020-07-14"
+						},
+						{
+							"key": "playlist",
+							"value": "morningCalls"
+						},
+						{
+							"key": "channel",
+							"value": "safra"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Opt-in Eric Evans",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Name\": \"Eric Evans Silva\",\r\n\t\"Email\":\"eric.evans@ddd.com\",\r\n\t\"Phone\":\"+5511911111111\"\r\n}"
+				},
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/optin",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"accounts",
+						"v1",
+						"optin"
+					]
+				},
+				"description": "Opt-in Eric Evans"
+			},
+			"response": []
+		},
+		{
+			"name": "Opt-in Robert Martin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Name\": \"Robert Cecil Martin da Silva\",\r\n\t\"Email\":\"robert.cecil@unclebobcleancode.com\",\r\n\t\"Phone\":\"+5511922222222\"\r\n}"
+				},
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/optin",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"accounts",
+						"v1",
+						"optin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Opt-in Martin Fowler",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Phone\": \"+5511933333333\",\r\n\t\"Name\": \"Martin Fowler Silva\",\r\n\t\"Email\": \"martin.fowler@martinfowlersilva.com\"\r\n}"
+				},
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/accounts/v1/optin",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"accounts",
+						"v1",
+						"optin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer XXX",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://af3tqle6wgdocsdirzlfrq7w5m.apigateway.sa-saopaulo-1.oci.customer-oci.com/fiap-sandbox/health",
+					"protocol": "https",
+					"host": [
+						"af3tqle6wgdocsdirzlfrq7w5m",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"fiap-sandbox",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
