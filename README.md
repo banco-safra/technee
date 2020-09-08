@@ -76,9 +76,6 @@ O modelo completo desta chamada encontra-se no [Postman Collection](https://gith
 
 ## Suporte técnico
 
-### Professores
-Dão suporte para **assuntos internos** do time e são acionados conforme contato já existente e usual entre alunos e professores.
-
 ### Issues no GitHub
 Podem ser abertos [Issues](https://github.com/banco-safra/technee/issues) no GitHub do Hackathon para **dúvidas técnicas** das APIs. 
 
