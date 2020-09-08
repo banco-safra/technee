@@ -1,4 +1,4 @@
-# Desafio-Conectado
+# Technee
 
 ## Aspectos técnicos
 
@@ -48,9 +48,9 @@ Ex:
 
 #### Parâmetros dos cenários simulados
 
-Para acesso aos cenários simulados disponíveis com headers, bodies, query parameters etc., importe este [Postman Collection](https://github.com/banco-safra/Desafio-Conectado/blob/master/documentacao-tecnica/FIAP.postman_collection.json) no [Postman](https://www.postman.com/).
+Para acesso aos cenários simulados disponíveis com headers, bodies, query parameters etc., importe este [Postman Collection](https://github.com/banco-safra/technee/blob/master/documentacao-tecnica/technee.postman_collection.json) no [Postman](https://www.postman.com/).
 
-Para entendimento do fluxo de negócio envolvido nos cenários simulados e outros detalhes técnicos, consulte este [documento em PDF](https://github.com/banco-safra/Desafio-Conectado/blob/master/documentacao-tecnica/APIs.pdf)
+Para entendimento do fluxo de negócio envolvido nos cenários simulados e outros detalhes técnicos, consulte este [documento em PDF](https://github.com/banco-safra/technee/blob/master/documentacao-tecnica/APIs.pdf)
 
 #### OAUTH
 
@@ -72,7 +72,7 @@ YWJjZWRmZ2hfU0VVX0NMSUVOVF9JRF9hYmNlZGZnaDphYmNlZGZnaF9TRVVfU0VDUkVUX2FiY2VkZmdo
 
 `Authorization: Bearer eyJ4NXQj...EuwHBw`
 
-O modelo completo desta chamada encontra-se no [Postman Collection](https://github.com/banco-safra/Desafio-Conectado/blob/master/documentacao-tecnica/FIAP.postman_collection.json) e no [documento em PDF](https://github.com/banco-safra/Desafio-Conectado/blob/master/documentacao-tecnica/APIs.pdf).
+O modelo completo desta chamada encontra-se no [Postman Collection](https://github.com/banco-safra/technee/blob/master/documentacao-tecnica/FIAP.postman_collection.json) e no [documento em PDF](https://github.com/banco-safra/technee/blob/master/documentacao-tecnica/APIs.pdf).
 
 ## Suporte técnico
 
@@ -80,13 +80,8 @@ O modelo completo desta chamada encontra-se no [Postman Collection](https://gith
 Dão suporte para **assuntos internos** do time e são acionados conforme contato já existente e usual entre alunos e professores.
 
 ### Issues no GitHub
-Podem ser abertos [Issues](https://github.com/banco-safra/Desafio-Conectado/issues) no GitHub do Hackathon para **dúvidas técnicas** quaisquer caso não exponham nenhuma estratégia do time. Estes Issues podem ser resolvidos por qualquer participante, professor ou equipe técnica do Safra. 
+Podem ser abertos [Issues](https://github.com/banco-safra/technee/issues) no GitHub do Hackathon para **dúvidas técnicas** das APIs. 
 
-Quando se tratar de Issue técnico relacionado às **APIs** e que não podem ser respondidos pelos participantes, eles serão respondidos pela equipe técnica do Safra de **segunda a sexta entre 9 e 18 horas**.
+Para verificar a disponibilidade do ambiente das APIs:
+- o endpoint de health check (GET [host]/health) deve responder um HTTP Status Code 200 (Ok) utilizando um access token válido.
 
-### Atendimento telefônico (11 3175-8131)
-O suporte telefônico funciona 24h e pode ser usado para acionamentos ao time de TI para resolver **indisponibilidades da API** que não possam ser resolvidas via Issues no GitHub por estar fora do horário de atendimento da equipe técnica (segunda a sexta entre 9 e 18 horas).
-
-Entende-se por indisponibilidades quando, porventura:
-- o endpoint de health check (GET [host]/health) não responder um HTTP Status Code 200 (Ok) utilizando um access token válido.
-- o endpoint de geração de token (https://idcs-902a944ff6854c5fbe94750e48d66be5.identity.oraclecloud.com/oauth2/v1/token) estiver retornando erros utilizando as credenciais corretas e payload conforme disponibilizado na Collection do Postman.
