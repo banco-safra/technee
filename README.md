@@ -56,7 +56,7 @@ Para entendimento do fluxo de negócio envolvido nos cenários simulados e outro
 
 Para acesso às APIs, um access token deve ser utilizado e enviado em todas as requisições. Para obtenção do access token:
 
-1 - Concatene o client_id e secret enviado aos times separando-os com : (dois pontos). Ex:
+1 - Concatene o client_id e secret (ver valores disponíveis na tabela abaixo) separando-os com : (dois pontos). Ex:
 
 abcedfgh_SEU_CLIENT_ID_abcedfgh:abcedfgh_SEU_SECRET_abcedfgh
 
@@ -73,6 +73,21 @@ YWJjZWRmZ2hfU0VVX0NMSUVOVF9JRF9hYmNlZGZnaDphYmNlZGZnaF9TRVVfU0VDUkVUX2FiY2VkZmdo
 `Authorization: Bearer eyJ4NXQj...EuwHBw`
 
 O modelo completo desta chamada encontra-se no [Postman Collection](https://github.com/banco-safra/technee/blob/master/documentacao-tecnica/FIAP.postman_collection.json) e no [documento em PDF](https://github.com/banco-safra/technee/blob/master/documentacao-tecnica/APIs.pdf).
+
+#### Lista de client_id e secret
+| client_id   | secret      |
+|-------------|-------------|
+| f9d3cd9600874ac2803d03ca709b78eb | 1a2075e3-b15e-4324-902c-0f12f8f08082 |
+| e33b611a81204f318a15d5728b998661 | 31591ad2-1cbd-44e9-a01c-1bbcc0985544 |
+| bfcfae0f5b3343e0b357188435682fee | 46a29eb0-40d9-432e-a63b-81892110ae78 |
+| a8e3bab206d24a89b9b113cc493a2350 | 18286459-3c66-4bb5-943d-00dcb4fdb76d |
+| b5fb1e3b36714ad0a08e9fd541d00160 | a70413b9-8837-47df-885e-3d0449feabf5 |
+| 9dffe873bf3b44b3ad067e87f354bef4 | 86a1a12e-595d-474e-8280-d0d26cbb53b7 |
+| efb4731160b54078ab7bf69cf1e1a5b7 | 449818dd-fdf2-4897-b914-ea8b5921a0f2 |
+| f892fe88abc443ac9362e11125092313 | a71948e5-02fc-48ec-b8bc-4e3b7ebb2cd0 |
+| 70a973924bdd4defb211bfd1c0309771 | 51971ed5-9704-4757-924a-d3431a2ae60d |
+| 94ed03ad9c8b4b079ff28ec854fab801 | 06173366-3c28-4b9f-a652-bbaddc532f2b |
+
 
 ## Suporte técnico
 
