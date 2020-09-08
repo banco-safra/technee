@@ -10,7 +10,7 @@ As APIs seguem a abordagem arquitetural REST. Esta abordagem disponibiliza infor
 
 Aquelas que tratam de consulta de informações bancárias foram inspiradas e são semelhantes às APIs do **Open Banking United Kingdom**. Assim, para informações mais completas além das presentes neste guia, consulte as [especificações](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/16385802/Specifications) do Open Banking. As outras APIs fora do escopo do Open Banking foram inspiradas nos padrões do Open Banking, mas não haverá documentação no Open Banking United Kingdon sobre elas.
 
-Para acesso às APIs, deve-se fazer um fluxo de Client Credentials do OAUTH2.0. Para maiores mais informações não presentes neste guia, consulte a [documentação oficial do OAUTH2.0](https://oauth.net/2/grant-types/client-credentials/).
+Para acesso às APIs, deve-se fazer um fluxo de Client Credentials do OAUTH2.0. Para mais informações não presentes neste guia, consulte a [documentação oficial do OAUTH2.0](https://oauth.net/2/grant-types/client-credentials/).
 
 #### Endpoints
 
