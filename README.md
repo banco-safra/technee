@@ -56,7 +56,7 @@ Para entendimento do fluxo de negócio envolvido nos cenários simulados e outro
 
 Para acesso às APIs, um access token deve ser utilizado e enviado em todas as requisições. Para obtenção do access token:
 
-1 - Concatene o client_id e secret (ver valores disponíveis na tabela abaixo) separando-os com : (dois pontos). Ex:
+1 - Concatene um dos client_id e secret (ver valores disponíveis na tabela abaixo) separando-os com : (dois pontos). Ex:
 
 abcedfgh_SEU_CLIENT_ID_abcedfgh:abcedfgh_SEU_SECRET_abcedfgh
 
@@ -97,3 +97,10 @@ Podem ser abertos [Issues](https://github.com/banco-safra/technee/issues) no Git
 Para verificar a disponibilidade do ambiente das APIs:
 - o endpoint de health check (GET [host]/health) deve responder um HTTP Status Code 200 (Ok) utilizando um access token válido.
 
+### Atendimento telefônico (11 3175-8131)
+O suporte telefônico funciona 24h e pode ser usado para acionamentos ao time de TI para resolver **indisponibilidades da API** que não possam ser resolvidas via Issues no GitHub por estar fora do horário de atendimento da equipe técnica, que estará acompanhando os Issues de segunda a sexta entre 9 e 18 horas. Dentro deste horário, peça suporte através do Issues.
+
+Entende-se por indisponibilidades quando, porventura:
+
+- o endpoint de health check (GET [host]/health) não responder um HTTP Status Code 200 (Ok) utilizando um access token válido.
+- o endpoint de geração de token (https://idcs-902a944ff6854c5fbe94750e48d66be5.identity.oraclecloud.com/oauth2/v1/token) estiver retornando erros utilizando as credenciais corretas e payload conforme disponibilizado na Collection do Postman.
